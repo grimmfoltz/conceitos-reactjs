@@ -16,7 +16,7 @@ function App() {
     const response = await api.post('repositories', {
       title: 'Jose',
       url: 'https://github.com/grimmfoltz/jose',
-      techs: ['Nod.js', 'ReactJS']
+      techs: ['Node.js', 'ReactJS']
     });
 
     setRepositories([...repositories, response.data ]);
